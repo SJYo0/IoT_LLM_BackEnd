@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from AiAnalysis.routers import AiAnalysis
+from AiReport.routers import AiReport
 
 app = FastAPI()
 app.add_middleware(
@@ -14,3 +15,4 @@ app.add_middleware(
 )
 
 app.include_router(AiAnalysis.router)
+app.include_router(AiReport.router)

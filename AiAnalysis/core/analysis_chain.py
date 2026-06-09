@@ -15,7 +15,7 @@ load_dotenv()
 # AI 환경 평가 및 인프라 제어 chain
 
 llm = ChatOpenAI(
-    model="gpt-4o-mini",
+    model="gpt-5.1",
     temperature=0.1
 )
 
